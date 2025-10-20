@@ -1,7 +1,7 @@
 def is_prime(n: int) -> bool:
     """
     Sprawdza, czy n jest liczbą pierwszą.
-    Prosta wersja: dzielenie przez wszystkie liczby od 2 do sqrt(n)
+    dzielenie przez wszystkie liczby od 2 do sqrt(n)
     """
     if n <= 1:
         return False
@@ -17,5 +17,5 @@ def is_prime(n: int) -> bool:
         i += 6
     return True
 
-for n in [1, 2, 3, 4, 17, 19, 20]:
+for n in [1, 2, 3, 4, 17, 19, 20, 17351]:
     print(f"{n} -> {is_prime(n)}")
